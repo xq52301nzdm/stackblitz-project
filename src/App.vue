@@ -3,7 +3,9 @@ import { onMounted } from 'vue';
 import HelloWorld from './components/HelloWorld.vue';
 import Axios from 'axios';
 
-onMounted(() => {});
+onMounted(() => {
+  console.log(`This is a hook function be named onMounted`);
+});
 </script>
 
 <template>
@@ -15,7 +17,7 @@ onMounted(() => {});
       <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
     </a> -->
   </div>
-  <HelloWorld msg="'''" />
+  <HelloWorld msg="Congratulations" />
 </template>
 
 <style scoped>
